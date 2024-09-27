@@ -1,0 +1,175 @@
+/* Reset de marges i padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estil per al cos */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #ffcc66, #ff9900); /* Fons degradat */
+    color: #333;
+    padding: 20px;
+}
+
+/* Estil per als encapçalaments */
+h1, h2, h3 {
+    color: #fff; /* Color blanc */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Estil per a formularis */
+form {
+    background: rgba(255, 255, 255, 0.9); /* Fons blanc translúcid */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Estil per als inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+input[type="submit"],
+input[type="password"], /* Afegit per a la contrasenya */
+input[type="radio"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estil per als botons */
+button,
+a.button,
+input[type="submit"] { /* Afegit per al botó de login */
+    background: #ff9900; /* Color taronja */
+    color: white;
+    text-decoration: none; /* Treure el subratllat */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s; /* Transició suau */
+    display: inline-block; /* Permet centrar */
+    text-align: center; /* Text centrat */
+    margin: 10px auto; /* Margen entre botons */
+    border: none; /* Treure el borde */
+}
+
+/* Efecte hover per als botons */
+button:hover,
+a.button:hover,
+input[type="submit"]:hover { /* Efecte per al botó de login */
+    background: #cc7a00; /* Color taronja més fosc */
+    transform: translateY(-2px); /* Lleugera elevació */
+}
+
+/* Estil per a enllaços d'accions */
+.action-link {
+    display: inline-block; /* Permet aplicar estils de botó */
+    padding: 10px 20px; /* Espai al voltant del text */
+    border-radius: 5px; /* Arrodonir les cantonades */
+    color: white; /* Color del text */
+    font-size: 16px; /* Mida del text */
+    text-decoration: none; /* Treure el subratllat */
+    transition: background-color 0.3s, transform 0.2s; /* Transició suau */
+    text-align: center; /* Text centrat */
+    margin: 5px; /* Margen entre enllaços */
+}
+
+/* Estil per a Modificar */
+.action-link.modify {
+    background-color: #4CAF50; /* Color verd per Modificar */
+}
+
+/* Estil per a Borrar */
+.action-link.delete {
+    background-color: red; /* Color vermell per Borrar */
+}
+
+/* Efecte hover per als enllaços */
+.action-link:hover {
+    transform: translateY(-2px); /* Efecte d'elevació */
+}
+
+/* Estil per a la taula */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden; /* Arrodonir les cantonades */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Fons blanc */
+}
+
+th, td {
+    padding: 15px; /* Espai més gran */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #ff9900; /* Color taronja */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; /* Lletra majúscula */
+}
+
+tr:hover {
+    background-color: #ffcc99; /* Color de fons en hover */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color alternatiu per a files */
+}
+
+/* Estil per a imatges */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estil per a peus de pàgina */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estil per al contenidor del botó */
+.button-container {
+    text-align: center; /* Centra el contingut horitzontalment */
+    margin: 20px 0; /* Espai per dalt i per baix */
+}
+
+/* Estil per a l'enllaç de logout */
+a.logout-link {
+    display: inline-block; /* Fa que sembli un botó */
+    background-color: #ff9900; /* Color taronja */
+    color: white; /* Color del text */
+    padding: 10px 20px; /* Espai al voltant */
+    border-radius: 5px; /* Cantonades arrodonides */
+    text-decoration: none; /* Treure subratllat */
+    transition: background 0.3s, transform 0.2s; /* Suavitzar el hover */
+    margin-top: 10px; /* Espai superior */
+}
+
+a.logout-link:hover {
+    background-color: #cc7a00; /* Color més fosc en hover */
+    transform: translateY(-2px); /* Lleuger moviment en hover */
+}
